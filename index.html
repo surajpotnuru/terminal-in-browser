@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Terminal in Browser - Angular JS</title>
+    <link rel="stylesheet" href="css/main.css"/>
+</head>
+<body ng-controller="terminal">
+
+    <div class="container">
+        <div class="desc-wrapper">
+            <p class="title">terminal@browser:~$<!--<span>&nbsp;</span>--></p>
+            <p>a funny attempt to emulate the all loved terminal in browser using AngularJS</p>
+            <p>type help for list of all commands and usage</p>
+            <p>made by suraj</p>
+            <p>download from github</p>
+        </div>
+        <div class="terminal-wrapper">
+            <div class="terminal">
+                <div class="terminal-menu-bar">
+                    <div class="cross"></div>
+                    <p>terminal@browser:~</p>
+                </div>
+                <div class="terminal-body">
+                    <!--<div ng-if="history.length">-->
+                        <!---->
+                    <!--</div>-->
+                    <p class="prompt-text" ng-bind="promptText"></p><p class="input"><span ng-bind="command"></span><span class="cursor" ng-if="terminalActive">&nbsp;</span><span ng-bind="commandRight"></span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script src="js/angular.min.js"></script>
+    <script src="js/angular-cookies.min.js"></script>
+    <script src="js/angular-ui-router.min.js"></script>
+    <script>
+        (function () {
+            angular.element(document).ready(function() {
+                angular.bootstrap(document, ['tib']);
+            });
+        }())
+    </script>
+    <script src="js/app.js"></script>
+</body>
+</html>

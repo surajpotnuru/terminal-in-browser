@@ -1,0 +1,25 @@
+p {
+  margin: 0px;
+  font-family: Helvetica;
+  font-size: 12px; }
+
+body .container {
+  width: 100%;
+  height: 100%;
+  position: relative; }
+  body .container .desc-wrapper {
+    width: 50%;
+    height: 100%;
+    position: relative;
+    float: left;
+    background: #000;
+    display: inline-block; }
+  body .container .terminal-wrapper {
+    width: 50%;
+    height: 100%;
+    position: relative;
+    float: left;
+    background: #eeeeee;
+    display: inline-block; }
+
+/*# sourceMappingURL=main.css.map */

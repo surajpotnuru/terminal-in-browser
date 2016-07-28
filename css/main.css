@@ -1,0 +1,100 @@
+@keyframes blink {
+  0% {
+    opacity: 1; }
+  1% {
+    opacity: 0; }
+  40% {
+    opacity: 1; } }
+p {
+  margin: 0px;
+  font-family: "Andale Mono";
+  font-size: 12px;
+  color: #45D40C; }
+
+html {
+  height: 100%;
+  -webkit-user-select: none;
+  overflow: auto; }
+
+body {
+  height: 100%;
+  margin: 0px;
+  overflow: auto; }
+  body .container {
+    width: 100%;
+    height: 100%; }
+    body .container .desc-wrapper {
+      width: 50%;
+      height: 100%;
+      position: relative;
+      float: left;
+      background: #000;
+      display: inline-block;
+      text-align: center; }
+      body .container .desc-wrapper p {
+        color: #45D40C; }
+        body .container .desc-wrapper p:nth-child(2) {
+          margin-top: 50px; }
+        body .container .desc-wrapper p:nth-child(4) {
+          margin-top: 200px; }
+      body .container .desc-wrapper .title {
+        color: #45D40C;
+        margin-top: 200px;
+        font-family: "Andale Mono";
+        font-size: 25px; }
+        body .container .desc-wrapper .title span {
+          background: #45D40C;
+          opacity: 1;
+          -webkit-animation: blink 1s cubic-bezier(0.5, 0, 1, 1) 0s infinite;
+          -o-animation: blink 1s cubic-bezier(0.5, 0, 1, 1) 0s infinite;
+          animation: blink 1s cubic-bezier(0.5, 0, 1, 1) 0s infinite; }
+    body .container .terminal-wrapper {
+      width: 50%;
+      height: 100%;
+      position: relative;
+      float: left;
+      background: #eeeeee;
+      display: inline-block; }
+      body .container .terminal-wrapper .terminal {
+        width: 90%;
+        margin: 20% auto; }
+        body .container .terminal-wrapper .terminal .terminal-menu-bar {
+          width: 100%;
+          position: relative;
+          height: 20px;
+          background: grey; }
+          body .container .terminal-wrapper .terminal .terminal-menu-bar p {
+            color: black;
+            position: absolute;
+            left: 30px;
+            top: 2.5px; }
+          body .container .terminal-wrapper .terminal .terminal-menu-bar .cross {
+            width: 15px;
+            height: 15px;
+            background: #c62828;
+            cursor: pointer;
+            margin: 2.5px 10px;
+            border-radius: 50%;
+            position: absolute; }
+        body .container .terminal-wrapper .terminal .terminal-body {
+          width: 100%;
+          position: relative;
+          height: 500px;
+          background: #000;
+          cursor: text;
+          padding: 5px;
+          overflow: hidden;
+          box-sizing: border-box; }
+          body .container .terminal-wrapper .terminal .terminal-body .prompt-text {
+            display: inline-block; }
+          body .container .terminal-wrapper .terminal .terminal-body .input {
+            display: inline-block;
+            word-break: break-all; }
+            body .container .terminal-wrapper .terminal .terminal-body .input .cursor {
+              background: #45D40C;
+              opacity: 1;
+              -webkit-animation: blink 1s cubic-bezier(0.5, 0, 1, 1) 0s infinite;
+              animation: blink 1s cubic-bezier(0.5, 0, 1, 1) 0s infinite;
+              -o-animation: blink 1s cubic-bezier(0.5, 0, 1, 1) 0s infinite; }
+
+/*# sourceMappingURL=main.css.map */
